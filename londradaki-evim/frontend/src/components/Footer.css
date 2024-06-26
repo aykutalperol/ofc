@@ -1,0 +1,19 @@
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0; /* Yüksekliği azaltmak için padding'i küçülttük */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px; /* Navbar yüksekliğine göre ayarlandı */
+}
+
+.footer-left, .footer-right {
+  padding: 0 20px;
+}
+
+footer p {
+  margin: 0;
+}

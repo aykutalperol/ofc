@@ -7,13 +7,11 @@ const dbConfig = {
   database: 'EMLAK_DB'
 };
 
-const pool = mysql.createPool(dbConfig);
-
 const connectDB = async () => {
   try {
-    await pool.getConnection();
+    const connection = await mysql.createConnection(dbConfig);
     console.log('MySQL connectedddd');
-    return pool;
+    return connection;
   } catch (err) {
     console.error('Error connecting to MySQL:', err.message);
     throw err;

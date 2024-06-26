@@ -60,7 +60,7 @@ const ListingDetail = () => {
 
   const handleClickOpen = () => {
     if (!isLoggedIn()) {
-      navigate('/login');
+      navigate('/register');
     } else {
       setOpen(true);
     }

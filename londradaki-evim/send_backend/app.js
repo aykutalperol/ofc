@@ -22,7 +22,7 @@ app.use('/api/users', require('./routes/userRoutes'));
 // Örnek bir sorgu çalıştırma (isteğe bağlı, test amaçlı)
 app.get('/api/test-db', async (req, res) => {
   try {
-    const [results] = await db.query('SELECT * FROM table_name'); // Örnekte 'table_name' uygun tablo adıyla değiştirilmelidir
+    const [results] = await db.query('SELECT * FROM table_name');
     res.json(results);
   } catch (err) {
     console.error('Error executing query:', err.message);
